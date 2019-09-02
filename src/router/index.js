@@ -6,7 +6,6 @@ const First = { template: '<div><h2>我是第 1 个子页面</h2></div>' }
 Vue.use(Router)
 
 export default new Router({
-  mode:'history',
   routes: [
     // {
     //   path: '/test',
@@ -14,7 +13,7 @@ export default new Router({
     //   component: { name: 'test',template:'<h1>test test test test test test</h1>'}
     // },
     {
-      path: '/hh',
+      path: '/test',
       component: First
     }
   ]
