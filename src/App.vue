@@ -4,7 +4,7 @@
   //- button(:style="{position:'fixed',zIndex:10000}", @click="changeImgArr") Refresh
   #content
     //- vue-waterfall-easy(ref="waterfall",:imgsArr="imgsArr",@scrollReachBottom="getData", @click="clickFn", :enablePullDownEvent="true", @pullDownMove="pullDownMove",@pullDownEnd="pullDownEnd")
-    vue-waterfall-easy(ref="waterfall",:imgsArr="imgsArr",:imgWidth=240,:maxCols=8,	@scrollReachBottom="getData", @click="clickFn", @imgError="imgErrorFn")
+    vue-waterfall-easy(ref="waterfall",:imgsArr="imgsArr",:imgWidth=240,:maxCols=8,:isRouterLink="true",@scrollReachBottom="getData", @click="clickFn", @imgError="imgErrorFn")
       .img-info(slot-scope="props")
         p.some-info {{props.value.info}}
 
@@ -23,7 +23,7 @@ import vueWaterfallEasy from './vue-waterfall-easy/vue-waterfall-easy.vue'
 import axios from 'axios'
 export default {
   name: 'app',
-  data() {
+  data() {  
     return {
       imgsArr: [],
       group: {

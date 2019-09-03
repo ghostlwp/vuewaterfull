@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import App from '../App.vue'
 // import detail from '../detail.vue'
 const First = { template: '<div><h2>我是第 1 个子页面</h2></div>' }
 
@@ -12,6 +13,10 @@ export default new Router({
     //   name: 'test',
     //   component: { name: 'test',template:'<h1>test test test test test test</h1>'}
     // },
+    {
+      path: '/',
+      component: App
+    },
     {
       path: '/test',
       component: First

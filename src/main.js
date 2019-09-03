@@ -13,7 +13,7 @@ if (!window.Promise) {
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router,
+  router
   // template: '<App/>',
-  render: h => h(App)
+  // render: h => h(App)
 })
